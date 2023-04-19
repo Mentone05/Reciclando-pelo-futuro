@@ -1,0 +1,113 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    background: white;
+    margin: auto;
+    background-image:url("imagens/papeldefundo.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+}
+#header1 {
+    text-align: center;
+}
+.container{
+    width: 150%;
+    max-width: 1100px;
+    margin: auto;
+    margin-top: 0px;
+    background-color: #234;
+}
+.lbl-menu{
+    background: #234;
+}
+.lbl-menu label a{
+    display: inline-block;
+    padding: 20px;
+    color: white;
+    cursor: pointer;
+    transition: all 400ms ease;
+    text-decoration: none;
+    
+}
+.lbl-menu label a:hover{
+    background: #23496d;
+}
+.content{
+   position: relative;
+}
+.content div{
+    position: absolute;
+    line-height: 1.8;
+    transition: all 600ms ease;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.90);
+    padding: 40px;
+    background: #fff;
+    padding-bottom: 40px;
+}
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+#radio1,#radio2,#radio3,#radio4{
+    display: none;
+}
+#radio1:checked ~ .tab1{
+    opacity: 1;
+    visibility:visible;
+    transform: scale(1);
+    
+}
+#radio2:checked ~ .tab2{
+    opacity: 1;
+    visibility:visible;
+    transform: scale(1);
+    width: 1100px;   
+}
+#radio3:checked ~ .tab3{
+    opacity: 1;
+    visibility:visible;
+    transform: scale(1);
+    width: 1100px;
+   
+}
+#radio4:checked ~ .tab4{
+    opacity: 1;
+    visibility:visible;
+    transform: scale(1);
+    width: 1100px;
+}
+.content div:after{
+    position: absolute;
+    content: "";
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid #fff;
+    bottom: 100%;
+    left: 28px;
+}
+.content .tab2:after{
+    left: 122px;
+}
+.content .tab3:after{
+    left: 290px;
+}
+.content .tab4:after{
+    left: 445px;
+}
+h1,h2,h3,h4,h5 {
+    font-size: 30px;
+}
+
+
+
